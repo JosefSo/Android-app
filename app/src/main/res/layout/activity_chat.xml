@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg4"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="title chat"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="90dp"
+        android:gravity="center"
+        android:text="name"
+        android:textColor="#313860"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clearbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logout"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#674242"
+        android:textColorHint="#674242"
+        android:backgroundTint="#30432E2E"
+        android:drawableLeft="@drawable/ic_baseline_delete_24"
+        android:text="clear chat"
+        android:textSize="8dp" />
+
+
+
+    <TextView
+        android:id="@+id/dinnerchattxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="Dinner Chat:"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logout"
+        app:layout_constraintRight_toRightOf="@+id/logout"
+        android:drawableLeft="@drawable/ic_baseline_mode_edit_24"
+        android:layout_marginLeft="215dp"
+        android:textColor="#674242"
+        android:textColorHint="#674242"
+        android:backgroundTint="#30432E2E"
+        android:text="edit profile"
+        android:textSize="8dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#781924"
+        android:drawableLeft="@drawable/ic_baseline_logout_24"
+        android:text="Log out"
+        android:textColor="@color/white"
+        android:textSize="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/name"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/message_input"
+        android:inputType="textMultiLine"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:maxHeight="200dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/chatList"
+        android:drawableLeft="@drawable/ic_baseline_mode_edit_24"
+        android:layout_marginTop="-55dp"
+        android:drawablePadding="10dp"
+        android:textColor="#674242"
+        android:textColorHint="#674242"
+        android:background="#30432E2E"
+        android:imeOptions="actionDone"
+        android:textSize="12dp"
+        android:hint="Input group message" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnSend"
+        android:src="@drawable/send_message"
+        android:scaleY="0.5"
+        android:scaleX="0.5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/chatList"
+        android:layout_marginTop="-63dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="300dp"
+        android:backgroundTint="#22B395"
+        android:text=""
+        android:textSize="11dp"/>
+
+
+</RelativeLayout>
