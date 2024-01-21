@@ -26,7 +26,7 @@ All information regarding the server, database, and application screens is in th
 # System analysis
 All information regarding the initiation document, the system requirements and the system analysis is in this [wiki](https://github.com/Segev955/FamilEat/wiki/System-analysis) file.<br>
 # Download 
-*Download the [ZIP](https://github.com/JosefSo/Android-app/archive/refs/heads/main.zip) file.<br>
+*Download the [ZIP](https://github.com/Segev955/FamilEat/files/10437906/FamilEat.zip) file.<br>
 *Extract the APK file to your android device.<br> 
 *Open the APK on your device.<br>
 *Install the application.<br>
